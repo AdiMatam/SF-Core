@@ -1,5 +1,7 @@
+set(LIB_NAME SF-Core)
+
 add_library (
-    SF-Core 
+    ${LIB_NAME} 
     STATIC
     Animation.cpp
     BaseScreen.cpp
@@ -11,6 +13,6 @@ add_library (
     WindowManager.cpp
 )
 
-target_compile_definitions(SF-Core PUBLIC SFML_STATIC TGUI_STATIC)
-target_precompile_headers(SF-Core PUBLIC ${CMAKE_SOURCE_DIR}/SF-Core/Pch.hpp)
-target_include_directories(SF-Core PUBLIC ${CMAKE_SOURCE_DIR}/SFML-TGUI/include)
+target_compile_definitions(${LIB_NAME} PUBLIC SFML_STATIC TGUI_STATIC)
+target_precompile_headers(${LIB_NAME} PUBLIC ${CMAKE_SOURCE_DIR}/SF-Core/Pch.hpp)
+target_include_directories(${LIB_NAME} PUBLIC ${CMAKE_SOURCE_DIR}/SFML-TGUI/include)
