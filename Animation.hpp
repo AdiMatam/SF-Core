@@ -27,6 +27,7 @@ public:
 	virtual void run() override;
 };
 
+using DelayedCaller = ConditionalAnimation;
 
 class IterativeAnimation : public Animation {
 private:
