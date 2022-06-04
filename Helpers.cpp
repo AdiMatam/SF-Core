@@ -42,3 +42,6 @@ void printColor(const tgui::Color& c) {
         int(c.getAlpha()) << "]\n";
 }
 
+float toDegrees(float radians) {
+    return (180 / M_PI) * radians;
+}

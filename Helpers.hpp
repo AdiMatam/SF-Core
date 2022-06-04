@@ -43,3 +43,5 @@ template <typename T>
 void printVector(const T& vec) {
     std::cout << "[" << vec.x << ", " << vec.y << "]\n";
 }
+
+float toDegrees(float radians);
